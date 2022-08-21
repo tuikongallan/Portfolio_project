@@ -38,14 +38,21 @@ a:hover{
     text-decoration:none;
 }
 
+/* background-color of divs  */
+.section-plum {
+    background-color: var(--plum);
+}
+
 /*  Intro styles  */
 
 #intro {
-    padding-bottom: 10rem;
+    padding: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 #intro p {
     font-size: 1rem;
-    line-heigt: 1.5;
+    line-height: 1.5;
 }
 #intro .name {
     font-family: var(--mono);
@@ -117,8 +124,11 @@ nav [class*="fa-"]:hover {
 }
 .button {
     background-color: var(--magenta);
+    color: white;
     padding: 0.5rem;
     border-radius: 5px;
+    font-family: var(--mono);
+    text-decoration: none;
 }
 .button:hover {
     color: var(--white);
@@ -134,5 +144,32 @@ nav [class*="fa-"]:hover {
         text-align: left;
         margin-right:auto;
 
+    }
+}
+
+/* footer section   */
+footer {
+    text-align: center;
+    padding: 4rem 0;
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 2rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 3rem;
+    font-size: 3rem;
+}
+@media (min-width:850px) {
+    nav {
+        max-width: 1200px;
+        margin: 0 auto
+    }
+    nav li:first-child {
+        flex-basis:auto;
+        text-align:left;
+        margin-right: auto;
     }
 }
